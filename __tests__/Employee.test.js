@@ -1,9 +1,14 @@
 // Employee is a Parent Class that will contain properties and results from methods
 
-// Test if the employee has a
-    // name
-    // id
-    // email
+// Test for employee name, id, and email
+test('creates an employee object', () => {
+    const employee = new Employee('Test');
+
+    expect(employee.name).toBe('Test');
+    expect(employee.id).toEqual(expect.any(Number));
+    expect(employee.email).toBe('testEmail@test.com');
+});
+
 
 // Test method for getting employee name. 
 
