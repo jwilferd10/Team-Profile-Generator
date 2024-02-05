@@ -1,4 +1,5 @@
 // Employee is a Parent Class that will contain properties and results from methods
+const Employee = require('../lib/Employee');
 
 // Test for employee name, id, and email
 test('creates an employee object', () => {
