@@ -35,3 +35,9 @@ test('get employee email using getEmail method', () => {
 
 
 // Test method for getRole (return Employee)
+test('get employee role and return generic Employee role', () => {
+    const employeeName = 'Bobby Testmaster';
+    
+    const employeePosition = employee.getRole();
+    expect(employeePosition).toBe(employeeName);
+});
