@@ -13,7 +13,7 @@ test('creates an employee object', () => {
 
 // Test method for getting employee name. 
 test('get employee name using getName method', () => {
-    const employeeName = 'Bobby Testmaster';
+    const employeeName = 'Test';
     const employee = new Employee(employeeName);
     const result = employee.getName();
     expect(result).toBe(employeeName);
@@ -21,14 +21,14 @@ test('get employee name using getName method', () => {
 
 // Test method for getting employee id
 test('get employee id using getID method', () => {
-    const employee = new Employee('test');
+    const employee = new Employee('Test');
     const idResult = employee.getID();
     expect(idResult).toEqual(expect.any(Number));
 });
 
 // Test method for getting employee email
 test('get employee email using getEmail method', () => {
-    const employee = new Employee('test');
+    const employee = new Employee('Test');
     const emailResult = employee.getEmail();
     expect(emailResult).toBe('testEmail@test.com');
 });
@@ -36,7 +36,7 @@ test('get employee email using getEmail method', () => {
 
 // Test method for getRole (return Employee)
 test('get employee role and return generic Employee role', () => {
-    const employee = new Employee('test');
+    const employee = new Employee('Test');
     const employeeRole = employee.getRole();
     expect(employeeRole).toBe('Employee');
 });
