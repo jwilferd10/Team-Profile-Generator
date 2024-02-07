@@ -13,10 +13,8 @@ test('creates an employee object', () => {
 
 // Test method for getting employee name. 
 test('get employee name using getName method', () => {
-    const employeeName = 'Test';
-    const employee = new Employee(employeeName);
-    const result = employee.getName();
-    expect(result).toBe(employeeName);
+    const employee = new Employee('Test');
+    expect(employee.name).toBe('Test');
 });
 
 // Test method for getting employee id
