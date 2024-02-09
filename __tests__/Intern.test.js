@@ -4,13 +4,12 @@ const Intern = require('../lib/Intern');
 // Test the intern object
 test('create the intern object', () => {
     const employee = new Employee('Test', 'Intern');
-    const intern = new Intern();
+    const intern = new Intern('UCLA');
 
     expect(employee.name).toBe('Test');
     expect(employee.role).toBe('Intern');
-
-    // Check for property of school
-})
+    expect(intern.school).toBe('UCLA');
+});
 
 // Test for getSchool() method
 // test('Test for the interns school', () => {
