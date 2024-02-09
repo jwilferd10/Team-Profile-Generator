@@ -19,7 +19,7 @@ test('Test for the interns school', () => {
 
 // Test for getRole and return 'intern'
 test('get employee role and return the Intern position', () => {
-    const employee = new Employee();
+    const employee = new Employee('', 'Intern');
     employee.getRole('Intern');
     expect(employee.role).toBe('Intern');
 });
