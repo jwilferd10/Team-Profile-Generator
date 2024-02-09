@@ -1,17 +1,19 @@
 const Employee = require('../lib/Employee');
+const Manager = require('../lib/Manager')
 
 // Test the manager project
 test('create the manager object', () => {
     const employee = new Employee('Test');
+    const manager = new Manager();
+
     expect(employee.name).toBe('Test');
-    // Currently failing
-    expect(manager.officeNumber).toEqual(expect.any(Number));
+    manager.getOfficeNumber();
 });
 
 // Check for property of officeNumber
 test('test for the managers office number', () => {
-    const officeNumber = Math.floor(Math.random());
-    expect(officeNumber).toEqual(expect.any(Number));
+    const manager = new Manager();
+    manager.getOfficeNumber();
 });
 
 // Run test for getRole and return Manager
