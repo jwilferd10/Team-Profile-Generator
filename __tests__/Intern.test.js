@@ -12,11 +12,14 @@ test('create the intern object', () => {
 });
 
 // Test for getSchool() method
-// test('Test for the interns school', () => {
-
-// });
+test('Test for the interns school', () => {
+    const intern = new Intern();
+    intern.getSchool();
+});
 
 // Test for getRole and return 'intern'
-// test('get employee role and return the Intern position', () => {
-
-// });
+test('get employee role and return the Intern position', () => {
+    const employee = new Employee();
+    employee.getRole('Intern');
+    expect(employee.role).toBe('Intern');
+});
