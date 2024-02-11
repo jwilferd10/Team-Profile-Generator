@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/jwilferd10/Team-Profile-Generator#readme",
   "dependencies": {
-    "inquirer": "^9.2.13",
+    "inquirer": "^8.0.0",
     "jest": "^29.7.0"
   }
 }
