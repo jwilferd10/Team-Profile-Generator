@@ -3,8 +3,8 @@ const generateTeam = require('./lib/Generator');
 const startGenerator = async () => {
     try {
         // Invoke the application
-        const generator = new generateTeam();
-        await generator.promptIntro();
+        const generatedProfile = new generateTeam();
+        await generatedProfile.promptIntro();
 
         const profileHTML = generatePage(generatedProfile);
 
