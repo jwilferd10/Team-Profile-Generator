@@ -4,4 +4,8 @@
 
     // Separate employee's based on role and present them in different sections on the page
 
+    // Use a switch statement to run sub-methods based on the role of an employee
+
+// Consolidate all the created sections into the main HTML template
+
 // Success log
