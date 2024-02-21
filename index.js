@@ -1,23 +1,4 @@
 const generateTeam = require('./lib/Generator');
 
-const startGenerator = async () => {
-    try {
-        // Invoke the application
-        const generatedProfile = new generateTeam();
-        await generatedProfile.promptIntro();
-
-        const profileHTML = generatePage(generatedProfile);
-
-        // Generate the appropriate files
-        await writeHTMLFile(profileHTML);
-
-        // TODO: Include code that writes CSS file
-
-        // Success Log
-        console.log('Team Profile has been successfully created.');
-    } catch (error) {
-        console.error(`An error has occurred: ${error.message}`);
-    };
-};
-
-startGenerator();
+// Invoke the application
+new generateTeam().promptIntro();
