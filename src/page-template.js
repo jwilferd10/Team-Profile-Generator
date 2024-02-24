@@ -1,10 +1,34 @@
 // Create a function titled printEmployees
-const printEmployees = () => {
-    // collect and print managers
+const printEmployees = (employeeArr) => {
+    employeeArr.forEach(employee => {
+        switch (employee.role) {
+            case 'Manager':
+                handleManager();
+                break;
+            case 'Engineer':
+                handleEngineer();
+                break;
+            case 'Intern':
+                handleIntern();
+                break;
+            default:
+                console.log(`Something went wrong`);
+        }
+    });
     
-    // collect and print engineers
+    const managersArr = [];
+    const engineerArr = [];
+    const interns = [];
 
-    // collect and print Interns
+    // Iterate through each version of employees and print the appropriate html
+
+    // Separate employee's based on role and present them in different sections on the page
+
+    // Use a switch statement to run sub-methods based on the role of an employee
+
+    // Create cards for specific HTML (Ensure code here is DRY)
+
+    // Consolidate all the created sections into the main HTML template
 }
 
 
@@ -12,7 +36,7 @@ const printEmployees = () => {
 const generatePage = (generatedProfile) => {
     const employeeArr = generatedProfile.employeeArr;
 
-    console.table(employeeArr);
+    // console.table(employeeArr);
 
     return `
         <!DOCTYPE html>
@@ -34,7 +58,7 @@ const generatePage = (generatedProfile) => {
             </header>
 
             <main>
-                ${printEmployees()}
+                ${printEmployees(employeeArr)}
             </main>
 
             <footer>
@@ -44,17 +68,6 @@ const generatePage = (generatedProfile) => {
         </html>
     `;
 };
-
-
-    // Iterate through each version of employees and print the appropriate html
-
-    // Separate employee's based on role and present them in different sections on the page
-
-    // Use a switch statement to run sub-methods based on the role of an employee
-
-// Create cards for specific HTML (Ensure code here is DRY)
-
-// Consolidate all the created sections into the main HTML template
 
 // Success log
 
