@@ -5,7 +5,7 @@ const printEmployees = (employeeArr) => {
     const engineerArr = employeeArr.filter(employee => employee.role === 'Engineer');
     const internArr = employeeArr.filter(employee => employee.role === 'Intern');
 
-    managersArr.forEach(manager => hanldeManager(manager));
+    managersArr.forEach(manager => handleManager(manager));
     engineerArr.forEach(engineer => handleEngineer(engineer));
     internArr.forEach(intern => handleIntern(intern));
     
