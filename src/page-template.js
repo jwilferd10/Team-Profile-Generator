@@ -8,11 +8,40 @@ const printEmployees = (employeeArr) => {
     managersArr.forEach(manager => handleManager(manager));
     engineerArr.forEach(engineer => handleEngineer(engineer));
     internArr.forEach(intern => handleIntern(intern));
-    
-    // Create cards for specific HTML (Ensure code here is DRY)
+};
 
-    // Consolidate all the created sections into the main HTML template
-}
+const handleManager = (manager) => {
+    return `
+        <section>
+            <h2>Management Staff</h2>
+            <div>
+                
+            </div>
+        </section>
+    `;
+};
+
+const handleEngineer = (engineer) => {
+    return `
+        <section>
+            <h2>Engineer Staff</h2>
+            <div>
+                
+            </div>
+        </section>
+    `;
+};
+
+const handleIntern = (intern) => {
+    return `
+        <section>
+            <h2>Intern Staff</h2>
+            <div>
+               
+            </div>
+        </section>
+    `;
+};
 
 
 // generatePage will display the html structure
