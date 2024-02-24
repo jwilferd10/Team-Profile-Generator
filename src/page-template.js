@@ -28,20 +28,17 @@ const generatePage = (generatedProfile) => {
     
         <body>
             <header>
-                <div class="container flex-row justify-space-between align-center py-3">
-                <h1 class="target1 page-title rounded-edges2 box-shadow2 spacing-five text-secondary bg-dark px-3">${header.name}</h1>
+                <div>
+                    <h1>Generated Team Profile</h1>
                 </div>
-                <nav class="container pb-4 flex-row justify-flex-start">
-                ${generataSocialMediaLinksHTML(socialMediaLinks)}
-                </nav>
             </header>
 
-            <main class="container my-5">
+            <main>
                 ${printEmployees()}
             </main>
 
-            <footer class="container text-center py-3">
-                <h3 class="text-dark">&copy; ${new Date().getFullYear()} by ${header.name}</h3>
+            <footer>
+                <h3>&copy; ${new Date().getFullYear()} by Jonathan Wilferd</h3>
             </footer>
         </body>
         </html>
