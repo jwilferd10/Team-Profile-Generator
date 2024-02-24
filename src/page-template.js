@@ -1,31 +1,14 @@
 // Create a function titled printEmployees
 const printEmployees = (employeeArr) => {
-    employeeArr.forEach(employee => {
-        switch (employee.role) {
-            case 'Manager':
-                handleManager();
-                break;
-            case 'Engineer':
-                handleEngineer();
-                break;
-            case 'Intern':
-                handleIntern();
-                break;
-            default:
-                console.log(`Something went wrong`);
-        }
-    });
-    
-    const managersArr = [];
-    const engineerArr = [];
-    const interns = [];
-
     // Iterate through each version of employees and print the appropriate html
+    const managersArr = employeeArr.filter(employee => employee.role === 'Manager');
+    const engineerArr = employeeArr.filter(employee => employee.role === 'Engineer');
+    const internArr = employeeArr.filter(employee => employee.role === 'Intern');
 
-    // Separate employee's based on role and present them in different sections on the page
-
-    // Use a switch statement to run sub-methods based on the role of an employee
-
+    managersArr.forEach(manager => hanldeManager(manager));
+    engineerArr.forEach(engineer => handleEngineer(engineer));
+    internArr.forEach(intern => handleIntern(intern));
+    
     // Create cards for specific HTML (Ensure code here is DRY)
 
     // Consolidate all the created sections into the main HTML template
