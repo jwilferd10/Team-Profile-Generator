@@ -12,13 +12,9 @@ const printEmployees = (employeeArr) => {
     engineersArr.forEach(engineer => handleEngineer(engineer));
     internsArr.forEach(intern => handleIntern(intern));
 
-    // Map through each array and generate the HTML
-    // const managersHTML = managersArr.map(manager => handleManager(manager)).join('');
-    // const engineersHTML = engineersArr.map(engineer => handleEngineer(engineer)).join('');
-    // const internsHTML = internsArr.map(intern => handleIntern(intern)).join('');
-
-
     let sectionsHTML = '';
+    
+    // Map through each array and generate the HTML
     if (managersArr.length > 0) {
         const managersHTML = managersArr.map(manager => handleManager(manager)).join('');
         sectionsHTML += `
@@ -56,29 +52,6 @@ const printEmployees = (employeeArr) => {
     }
 
     return sectionsHTML;
-
-    // return `
-    //     <section>
-    //         <h2>Management Staff</h2>
-    //         <div>
-    //             ${managersHTML}
-    //         </div>
-    //     </section>
-
-    //     <section>
-    //         <h2>Engineer Staff</h2>
-    //         <div>
-    //             ${engineersHTML}
-    //         </div>
-    //     </section>
-
-    //     <section>
-    //         <h2>Intern Staff</h2>
-    //         <div>
-    //             ${internsHTML}
-    //         </div>
-    //     </section>
-    // `;
 };
 
 const handleManager = (manager) => {
