@@ -7,36 +7,78 @@ const printEmployees = (employeeArr) => {
     const engineersArr = employeeArr.filter(employee => employee.role === 'Engineer');
     const internsArr = employeeArr.filter(employee => employee.role === 'Intern');
 
+    // Filter employees based on role
     managersArr.forEach(manager => handleManager(manager));
     engineersArr.forEach(engineer => handleEngineer(engineer));
     internsArr.forEach(intern => handleIntern(intern));
 
-    const managersHTML = managersArr.map(manager => handleManager(manager)).join('');
-    const engineersHTML = engineersArr.map(engineer => handleEngineer(engineer)).join('');
-    const internsHTML = internsArr.map(intern => handleIntern(intern)).join('');
+    // Map through each array and generate the HTML
+    // const managersHTML = managersArr.map(manager => handleManager(manager)).join('');
+    // const engineersHTML = engineersArr.map(engineer => handleEngineer(engineer)).join('');
+    // const internsHTML = internsArr.map(intern => handleIntern(intern)).join('');
 
-    return `
-        <section>
-            <h2>Management Staff</h2>
-            <div>
-                ${managersHTML}
-            </div>
-        </section>
 
-        <section>
-            <h2>Engineer Staff</h2>
-            <div>
-                ${engineersHTML}
-            </div>
-        </section>
+    let sectionsHTML = '';
+    if (managersArr.length > 0) {
+        const managersHTML = managersArr.map(manager => handleManager(manager)).join('');
+        sectionsHTML += `
+            <section>
+                <h2>Management Staff</h2>
+                <div>
+                    ${managersHTML}
+                </div>
+            </section>
+        `;
+    }
 
-        <section>
-            <h2>Intern Staff</h2>
-            <div>
-                ${internsHTML}
-            </div>
-        </section>
-    `;
+    if(engineersArr.length > 0) {
+        const engineersHTML = engineersArr.map(engineer => handleEngineer(engineer)).join('');
+        sectionsHTML += `
+            <section>
+                <h2>Engineer Staff</h2>
+                <div>
+                    ${engineersHTML}
+                </div>
+            </section>
+        `;
+    }
+
+    if(internsArr.length > 0) {
+        const internsHTML = internsArr.map(intern => handleIntern(intern)).join('');
+        sectionsHTML += `
+            <section>
+                <h2>Intern Staff</h2>
+                <div>
+                    ${internsHTML}
+                </div>
+            </section>
+        `;
+    }
+
+    return sectionsHTML;
+
+    // return `
+    //     <section>
+    //         <h2>Management Staff</h2>
+    //         <div>
+    //             ${managersHTML}
+    //         </div>
+    //     </section>
+
+    //     <section>
+    //         <h2>Engineer Staff</h2>
+    //         <div>
+    //             ${engineersHTML}
+    //         </div>
+    //     </section>
+
+    //     <section>
+    //         <h2>Intern Staff</h2>
+    //         <div>
+    //             ${internsHTML}
+    //         </div>
+    //     </section>
+    // `;
 };
 
 const handleManager = (manager) => {
@@ -59,7 +101,6 @@ const handleManager = (manager) => {
 const handleEngineer = (engineer) => {
     return `
         <section>
-            <h2>Engineer Staff</h2>
             <div>
                 <h3>${engineer.name}</h3>
                 <h3>${engineer.role}</h3>
@@ -67,7 +108,7 @@ const handleEngineer = (engineer) => {
                 <div>
                     <p>ID: ${engineer.id}</p>
                     <p>Email: ${engineer.email}</p>
-                    <p>Office Number: ${engineer.github}</p>
+                    <p>GitHub: ${engineer.github}</p>
                 </div>
             </div>
         </section>
@@ -77,7 +118,6 @@ const handleEngineer = (engineer) => {
 const handleIntern = (intern) => {
     return `
         <section>
-            <h2>Intern Staff</h2>
             <div>
                 <h3>${intern.name}</h3>
                 <h3>${intern.role}</h3>
