@@ -1,3 +1,21 @@
+const fs = require('fs');
+
+const writeFile = fileContent => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./dist/index.html', fileContent, error => {
+            if (error) {
+                reject(error);
+                return;
+            }
+
+            resolve({
+                ok: true,
+                message: 'HTML file created!'
+            });
+        });
+    });
+};
+
 // generate-html will utilize fs to writeFile the HTML file, located inside the /dist directory.
 
 // create a connection to fs
