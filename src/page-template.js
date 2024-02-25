@@ -8,17 +8,34 @@ const printEmployees = (employeeArr) => {
     managersArr.forEach(manager => handleManager(manager));
     engineerArr.forEach(engineer => handleEngineer(engineer));
     internArr.forEach(intern => handleIntern(intern));
-};
 
-const handleManager = (manager) => {
+    const managersHTML = managersArr.map(manager => handleManager(manager)).join('');
+
     return `
         <section>
             <h2>Management Staff</h2>
             <div>
-                
+                ${managersHTML}
             </div>
         </section>
     `;
+};
+
+const handleManager = (manager) => {
+    const managerHTML =  `
+        <div>
+            <h3>${manager.name}</h3>
+            <h3>${manager.role}</h3>
+
+            <div>
+                <p>ID: ${manager.id}</p>
+                <p>Email: ${manager.email}</p>
+                <p>Office Number: ${manager.officeNumber}</p>
+            </div>
+        </div>
+    `;
+
+    return managerHTML;
 };
 
 const handleEngineer = (engineer) => {
