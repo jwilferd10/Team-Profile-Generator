@@ -4,20 +4,36 @@ const writeFile = require('./generate-html.js');
 const printEmployees = (employeeArr) => {
     // Iterate through each version of employees and print the appropriate html
     const managersArr = employeeArr.filter(employee => employee.role === 'Manager');
-    const engineerArr = employeeArr.filter(employee => employee.role === 'Engineer');
-    const internArr = employeeArr.filter(employee => employee.role === 'Intern');
+    const engineersArr = employeeArr.filter(employee => employee.role === 'Engineer');
+    const internsArr = employeeArr.filter(employee => employee.role === 'Intern');
 
     managersArr.forEach(manager => handleManager(manager));
-    engineerArr.forEach(engineer => handleEngineer(engineer));
-    internArr.forEach(intern => handleIntern(intern));
+    engineersArr.forEach(engineer => handleEngineer(engineer));
+    internsArr.forEach(intern => handleIntern(intern));
 
     const managersHTML = managersArr.map(manager => handleManager(manager)).join('');
+    const engineersHTML = engineersArr.map(engineer => handleEngineer(engineer)).join('');
+    const internsHTML = internsArr.map(intern => handleIntern(intern)).join('');
 
     return `
         <section>
             <h2>Management Staff</h2>
             <div>
                 ${managersHTML}
+            </div>
+        </section>
+
+        <section>
+            <h2>Engineer Staff</h2>
+            <div>
+                ${engineersHTML}
+            </div>
+        </section>
+
+        <section>
+            <h2>Intern Staff</h2>
+            <div>
+                ${internsHTML}
             </div>
         </section>
     `;
