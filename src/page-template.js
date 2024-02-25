@@ -45,7 +45,14 @@ const handleEngineer = (engineer) => {
         <section>
             <h2>Engineer Staff</h2>
             <div>
-                
+                <h3>${engineer.name}</h3>
+                <h3>${engineer.role}</h3>
+
+                <div>
+                    <p>ID: ${engineer.id}</p>
+                    <p>Email: ${engineer.email}</p>
+                    <p>Office Number: ${engineer.github}</p>
+                </div>
             </div>
         </section>
     `;
@@ -56,7 +63,14 @@ const handleIntern = (intern) => {
         <section>
             <h2>Intern Staff</h2>
             <div>
-               
+                <h3>${intern.name}</h3>
+                <h3>${intern.role}</h3>
+
+                <div>
+                    <p>ID: ${intern.id}</p>
+                    <p>Email: ${intern.email}</p>
+                    <p>Office Number: ${intern.school}</p>
+                </div> 
             </div>
         </section>
     `;
