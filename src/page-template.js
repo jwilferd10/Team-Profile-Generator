@@ -1,3 +1,5 @@
+const writeFile = require('./generate-html.js');
+
 // Create a function titled printEmployees
 const printEmployees = (employeeArr) => {
     // Iterate through each version of employees and print the appropriate html
@@ -67,7 +69,7 @@ const generatePage = (generatedProfile) => {
 
     // console.table(employeeArr);
 
-    return `
+    const htmlContent = `
         <!DOCTYPE html>
         <html lang="en">
         <head>
@@ -96,7 +98,12 @@ const generatePage = (generatedProfile) => {
         </body>
         </html>
     `;
+
+    // Write the HTML content to a file
+    writeFile(htmlContent);
 };
+
+
 
 // Success log
 
