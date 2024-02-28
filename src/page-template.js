@@ -31,8 +31,8 @@ const printEmployees = (employeeArr) => {
         const engineersHTML = engineersArr.map(engineer => handleEngineer(engineer)).join('');
         sectionsHTML += `
             <section>
-                <h2>Engineer Staff</h2>
-                <div>
+                <h2 class="text-center pb-4">Engineer Staff</h2>
+                <div class="d-flex justify-content-center">
                     ${engineersHTML}
                 </div>
             </section>
@@ -43,8 +43,8 @@ const printEmployees = (employeeArr) => {
         const internsHTML = internsArr.map(intern => handleIntern(intern)).join('');
         sectionsHTML += `
             <section>
-                <h2>Intern Staff</h2>
-                <div>
+                <h2 class="text-center pb-4">Intern Staff</h2>
+                <div class="d-flex justify-content-center">
                     ${internsHTML}
                 </div>
             </section>
@@ -76,8 +76,10 @@ const handleManager = (manager) => {
 const handleEngineer = (engineer) => {
     return `
         <div class="card border">
-            <h3>${engineer.name}</h3>
-            <h4>${engineer.role}</h4>
+            <div class="card-header bg-primary text-white pb-3">
+                <h3>${engineer.name}</h3>
+                <h4>${engineer.role}</h4>
+            </div>
 
             <ul class="list-group p-2 m-2">
                 <li class="list-group-item">ID: ${engineer.id}</li>
@@ -91,8 +93,10 @@ const handleEngineer = (engineer) => {
 const handleIntern = (intern) => {
     return `
         <div class="card border">
-            <h3>${intern.name}</h3>
-            <h4>${intern.role}</h4>
+            <div class="card-header bg-primary text-white pb-3">
+                <h3>${intern.name}</h3>
+                <h4>${intern.role}</h4>
+            </div>
 
             <ul class="list-group p-2 m-2">
                 <li class="list-group-item">ID: ${intern.id}</li>
