@@ -19,8 +19,8 @@ const printEmployees = (employeeArr) => {
         const managersHTML = managersArr.map(manager => handleManager(manager)).join('');
         sectionsHTML += `
             <section>
-                <h2>Management Staff</h2>
-                <div>
+                <h2 class="text-center pb-4">Management Staff</h2>
+                <div class="d-flex justify-content-center">
                     ${managersHTML}
                 </div>
             </section>
@@ -56,11 +56,11 @@ const printEmployees = (employeeArr) => {
 
 const handleManager = (manager) => {
     const managerHTML =  `
-        <div>
+        <div class="managerCard border p-4">
             <h3>${manager.name}</h3>
             <h3>${manager.role}</h3>
 
-            <div>
+            <div class="border">
                 <p>ID: ${manager.id}</p>
                 <p>Email: ${manager.email}</p>
                 <p>Office Number: ${manager.officeNumber}</p>
@@ -121,14 +121,14 @@ const generatePage = (generatedProfile) => {
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>Generated Team Profile</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
             <link rel="stylesheet" href="style.css">
         </head>
     
         <body>
             <header>
                 <div>
-                    <h1>Generated Team Profile</h1>
+                    <h1 class="text-center pt-5 pb-5">Generated Team Profile</h1>
                 </div>
             </header>
 
