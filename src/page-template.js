@@ -56,7 +56,7 @@ const printEmployees = (employeeArr) => {
 
 const handleManager = (manager) => {
     const managerHTML =  `
-        <div class="card managerCard border">
+        <div class="card border">
             <div class="card-header bg-primary text-white pb-3">
                 <h3>${manager.name}</h3>
                 <h4> <i class="fas fa-mug-hot"></i> ${manager.role}</h4>
