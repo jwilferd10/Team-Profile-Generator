@@ -56,15 +56,17 @@ const printEmployees = (employeeArr) => {
 
 const handleManager = (manager) => {
     const managerHTML =  `
-        <div class="managerCard border p-4">
-            <h3>${manager.name}</h3>
-            <h3>${manager.role}</h3>
-
-            <div class="border">
-                <p>ID: ${manager.id}</p>
-                <p>Email: ${manager.email}</p>
-                <p>Office Number: ${manager.officeNumber}</p>
+        <div class="card managerCard border">
+            <div class="card-header bg-primary text-white pb-3">
+                <h3>${manager.name}</h3>
+                <h3>${manager.role}</h3>
             </div>
+
+            <ul class="list-group p-2 m-2">
+                <li class="list-group-item">ID: ${manager.id}</li>
+                <li class="list-group-item">Email: ${manager.email}</li>
+                <li class="list-group-item">Office Number: ${manager.officeNumber}</li>
+            </ul>
         </div>
     `;
 
