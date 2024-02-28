@@ -129,7 +129,7 @@ const generatePage = (generatedProfile) => {
     
         <body>
             <header>
-                <div>
+                <div class="bg-danger text-white mb-5 pb-2">
                     <h1 class="text-center pt-5 pb-5">Generated Team Profile</h1>
                 </div>
             </header>
