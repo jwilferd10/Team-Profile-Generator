@@ -75,30 +75,30 @@ const handleManager = (manager) => {
 
 const handleEngineer = (engineer) => {
     return `
-        <div>
+        <div class="card border">
             <h3>${engineer.name}</h3>
-            <h3>${engineer.role}</h3>
+            <h4>${engineer.role}</h4>
 
-            <div>
-                <p>ID: ${engineer.id}</p>
-                <p>Email: ${engineer.email}</p>
-                <p>GitHub: ${engineer.github}</p>
-            </div>
+            <ul class="list-group p-2 m-2">
+                <li class="list-group-item">ID: ${engineer.id}</li>
+                <li class="list-group-item">Email: ${engineer.email}</li>
+                <li class="list-group-item">Office Number: ${engineer.github}</li>
+            </ul>
         </div>
     `;
 };
 
 const handleIntern = (intern) => {
     return `
-        <div>
+        <div class="card border">
             <h3>${intern.name}</h3>
-            <h3>${intern.role}</h3>
+            <h4>${intern.role}</h4>
 
-            <div>
-                <p>ID: ${intern.id}</p>
-                <p>Email: ${intern.email}</p>
-                <p>Office Number: ${intern.school}</p>
-            </div> 
+            <ul class="list-group p-2 m-2">
+                <li class="list-group-item">ID: ${intern.id}</li>
+                <li class="list-group-item">Email: ${intern.email}</li>
+                <li class="list-group-item">Office Number: ${intern.school}</li>
+            </ul>
         </div>
     `;
 };
