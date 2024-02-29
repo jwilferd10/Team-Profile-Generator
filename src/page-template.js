@@ -101,7 +101,7 @@ const handleIntern = (intern) => {
             <ul class="list-group p-2 m-2">
                 <li class="list-group-item">ID: ${intern.id}</li>
                 <li class="list-group-item">Email: ${intern.email}</li>
-                <li class="list-group-item">Office Number: ${intern.school}</li>
+                <li class="list-group-item">School: ${intern.school}</li>
             </ul>
         </div>
     `;
