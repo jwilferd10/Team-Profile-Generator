@@ -84,7 +84,7 @@ const handleEngineer = (engineer) => {
             <ul class="list-group p-2 m-2">
                 <li class="list-group-item">ID: ${engineer.id}</li>
                 <li class="list-group-item">Email: ${engineer.email}</li>
-                <li class="list-group-item">Office Number: ${engineer.github}</li>
+                <li class="list-group-item">GitHub: ${engineer.github}</li>
             </ul>
         </div>
     `;
