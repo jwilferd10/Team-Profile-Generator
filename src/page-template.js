@@ -21,7 +21,9 @@ const printEmployees = (employeeArr) => {
             <section>
                 <h2 class="text-center pb-4">Management Staff</h2>
                 <div class="row justify-content-center">
-                    ${managersHTML}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        ${managersHTML}
+                    </div>
                 </div>
             </section>
         `;
@@ -33,7 +35,9 @@ const printEmployees = (employeeArr) => {
             <section>
                 <h2 class="text-center pb-4">Engineer Staff</h2>
                 <div class="row justify-content-center">
-                    ${engineersHTML}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        ${engineersHTML}
+                    </div>
                 </div>
             </section>
         `;
@@ -45,7 +49,9 @@ const printEmployees = (employeeArr) => {
             <section>
                 <h2 class="text-center pb-4">Intern Staff</h2>
                 <div class="row justify-content-center">
-                    ${internsHTML}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        ${internsHTML}
+                    </div>
                 </div>
             </section>
         `;
