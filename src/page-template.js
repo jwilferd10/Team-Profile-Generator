@@ -62,7 +62,7 @@ const printEmployees = (employeeArr) => {
 
 const handleManager = (manager) => {
     const managerHTML =  `
-        <div class="card border backgroundColor">
+        <div class="card border backgroundColor mb-4">
             <div class="card-header bg-primary text-white pb-3">
                 <h3>${manager.name}</h3>
                 <h4> <i class="fas fa-mug-hot"></i> ${manager.role}</h4>
@@ -81,7 +81,7 @@ const handleManager = (manager) => {
 
 const handleEngineer = (engineer) => {
     return `
-        <div class="card border backgroundColor">
+        <div class="card border backgroundColor mb-4">
             <div class="card-header bg-primary text-white pb-3">
                 <h3> <i class="fas fa-glasses"></i> ${engineer.name}</h3>
                 <h4>${engineer.role}</h4>
@@ -98,7 +98,7 @@ const handleEngineer = (engineer) => {
 
 const handleIntern = (intern) => {
     return `
-        <div class="card border backgroundColor">
+        <div class="card border backgroundColor mb-4">
             <div class="card-header bg-primary text-white pb-3">
                 <h3> <i class="fas fa-user-graduate"></i> ${intern.name}</h3>
                 <h4>${intern.role}</h4>
