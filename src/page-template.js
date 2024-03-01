@@ -63,7 +63,7 @@ const printEmployees = (employeeArr) => {
 const handleManager = (manager) => {
     const managerHTML =  `
         <div class="card border backgroundColor mb-4">
-            <div class="card-header bg-primary text-white pb-3">
+            <div class="card-header bg-primary text-white pt-2 pb-3">
                 <h3>${manager.name}</h3>
                 <h4> <i class="fas fa-mug-hot"></i> ${manager.role}</h4>
             </div>
@@ -82,7 +82,7 @@ const handleManager = (manager) => {
 const handleEngineer = (engineer) => {
     return `
         <div class="card border backgroundColor mb-4">
-            <div class="card-header bg-primary text-white pb-3">
+            <div class="card-header bg-primary text-white pt-2 pb-3">
                 <h3> <i class="fas fa-glasses"></i> ${engineer.name}</h3>
                 <h4>${engineer.role}</h4>
             </div>
@@ -99,7 +99,7 @@ const handleEngineer = (engineer) => {
 const handleIntern = (intern) => {
     return `
         <div class="card border backgroundColor mb-4">
-            <div class="card-header bg-primary text-white pb-3">
+            <div class="card-header bg-primary text-white pt-2 pb-3">
                 <h3> <i class="fas fa-user-graduate"></i> ${intern.name}</h3>
                 <h4>${intern.role}</h4>
             </div>
@@ -144,7 +144,7 @@ const generatePage = (generatedProfile) => {
                 ${printEmployees(employeeArr)}
             </main>
 
-            <footer class="text-center fixed-bottom">
+            <footer class="text-center">
                 <h4>&copy; ${new Date().getFullYear()} by Jonathan Wilferd</h4>
             </footer>
 
