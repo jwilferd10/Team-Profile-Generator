@@ -90,7 +90,7 @@ const handleEngineer = (engineer) => {
             <ul class="list-group p-2 m-2">
                 <li class="list-group-item"><i class="fas fa-user"></i> ID: ${engineer.id}</li>
                 <li class="list-group-item"><i class="fas fa-envelope"></i> Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
-                <li class="list-group-item">GitHub: <i class="fab fa-github"></i> <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></li>
+                <li class="list-group-item"><i class="fab fa-github"></i> GitHub: <a href="https://github.com/${engineer.github}" target="_blank">${engineer.github}</a></li>
             </ul>
         </div>
     `;
