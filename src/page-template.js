@@ -83,8 +83,8 @@ const handleEngineer = (engineer) => {
     return `
         <div class="card border backgroundColor mb-4">
             <div class="card-header bg-primary text-white pt-2 pb-3">
-                <h3> <i class="fas fa-glasses"></i> ${engineer.name}</h3>
-                <h4>${engineer.role}</h4>
+                <h3>${engineer.name}</h3>
+                <h4><i class="fas fa-glasses"></i> ${engineer.role}</h4>
             </div>
 
             <ul class="list-group p-2 m-2">
@@ -100,8 +100,8 @@ const handleIntern = (intern) => {
     return `
         <div class="card border backgroundColor mb-4">
             <div class="card-header bg-primary text-white pt-2 pb-3">
-                <h3> <i class="fas fa-user-graduate"></i> ${intern.name}</h3>
-                <h4>${intern.role}</h4>
+                <h3>${intern.name}</h3>
+                <h4><i class="fas fa-user-graduate"></i> ${intern.role}</h4>
             </div>
 
             <ul class="list-group p-2 m-2">
