@@ -1,0 +1,34 @@
+body {
+    background-color: #fff3db
+}
+
+section {
+    margin: 50px
+}
+
+#githubLink{
+    color: unset;
+}
+
+#githubLink:hover {
+    color: black;
+}
+
+.headerColor {
+    background-image: linear-gradient(to bottom, rgb(111, 161, 252) 60%, #b3d1ff 95%, #fff3db 100%);
+}
+
+.border {
+    outline-color: black;
+    outline-width: 0.5px; 
+    outline-style: solid;
+}
+
+.card {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.379);
+    margin-right: 25px;
+}
+
+.backgroundColor {
+    background-color: rgb(238, 238, 238);
+}
