@@ -135,8 +135,12 @@ const generatePage = (generatedProfile) => {
     
         <body>
             <header>
-                <div class="bg-danger text-white mb-5 pb-2">
-                    <h1 class="text-center pt-5 pb-5">Generated Team Profile</h1>
+                <div class="bg-danger text-white mb-5 pb-5 text-center">
+                    <h1 class="pt-5">Team Profile Generator</h1>
+                    <h3 class="pt-2"><em>Put it into perspective</em><h3>
+                    <a id="githubLink" class="align-items-center" href="https://github.com/jwilferd10" target="_blank">
+                        <i class="pt-4 fab fa-github fa-2x"></i>
+                    </a>
                 </div>
             </header>
 
