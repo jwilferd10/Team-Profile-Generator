@@ -3,11 +3,12 @@ const Employee = require('../lib/Employee');
 
 // Test for employee name, id, and email
 test('creates an employee object', () => {
-    const employee = new Employee('Test');
+    const employee = new Employee('Test', 'testEmail@test.com', 1, 'Employee');
 
     expect(employee.name).toBe('Test');
-    expect(employee.id).toEqual(expect.any(Number));
     expect(employee.email).toBe('testEmail@test.com');
+    expect(employee.id).toEqual(expect.any(Number));
+    expect(employee.role).toBe('Employee');
 });
 
 
@@ -18,15 +19,16 @@ test('get employee name using getName method', () => {
 });
 
 // Test method for getting employee id
-test('get employee id using getID method', () => {
-    const employee = new Employee('Test');
-    const idResult = employee.getID();
-    expect(idResult).toEqual(expect.any(Number));
+test('get employee id', () => {
+    const testID = 123;
+    const employee = new Employee('Test', 'testEmail@test.com', testID);
+    expect(employee.id).toEqual(expect.any(Number));
 });
 
 // Test method for getting employee email
 test('get employee email using getEmail method', () => {
-    const employee = new Employee('Test');
+    const testEmail = 'testEmail@test.com'
+    const employee = new Employee('Test', testEmail);
     const emailResult = employee.getEmail();
     expect(emailResult).toBe('testEmail@test.com');
 });
