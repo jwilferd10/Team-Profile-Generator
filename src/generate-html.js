@@ -17,5 +17,3 @@ const writeFile = fileContent => {
 };
 
 module.exports = writeFile
-
-// TODO: After basic HTML has been implemented, write a CSS file here.
