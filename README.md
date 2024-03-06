@@ -1,3 +1,5 @@
+# Team Profile Generator
+
 ## 📂 Table of Contents 
 - [Description](#wave-description)
 - [User Story](#open_book-user-story)
@@ -40,6 +42,22 @@ GIVEN a command-line application that accepts user input
 - Jest
 
 ## :minidisc: Usage
+Requires `node` to play this game
+
+Run `npm i` to install dependencies 
+  - "jest": "^29.7.0",
+  - "inquirer": "^8.2.6"
+
+Invoke jest tests by running `npm run test`
+
+Invoke the generator by running `node index` or `node index.js`
+
+1) Start by filling out the base Employee File, include a name and email.
+2) Alongside name and email, the new employee object will contain a numerical ID and an initial role of 'Employee'. (NOTE: ID's are determined by the placement of the object within an EmployeeArray)
+3) Select a specific role for the employee, options are Manager, Engineer, Intern.
+4) Enter prompts for each specific employee.
+5) Users can remove any Employee object before generating HTML.
+6) Finishes by creating an HTML output within the /dist directory.
 
 ## :paperclip: Contributors
 - jwilferd10
@@ -48,9 +66,3 @@ GIVEN a command-line application that accepts user input
 
 - GitHub: [jwilferd10](https://github.com/jwilferd10)
   - Email: jwilferd10@yahoo.com
-
-### Notes:
-
-- dist directory will store rendered output (HTML) and CSS style sheets
-- lib directory will store classes
-- src directory will store template helper
