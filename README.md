@@ -9,6 +9,19 @@
 - [Contact Information](#e-mail-contact-information)
 
 ## :wave: Description
+### 📋 Put It Into Perspective
+Welcome to this Team Profile Generator, a command-line application built using Node.js. Enables users to create team profiles by answering a series of prompts. The information provided is then used to generate a structured HTML output. Put it into perspective and create a visual representation of your team profile!
+
+### :rocket: Features:
+- Optimized GUI to highlight employee array
+- Capability of deleting existing employee objects before printing to HTML
+- Structured HTML to showcase employee data
+
+### 🎯 Follows Best Practices:
+The focus of this project was to emphasize modern approaches. Team Profile Generator was built using the principles of Object Oriented Programming and Test Driven Development.
+
+### 🌐 Accessible and Open:
+The repository encourages exploration and collaboration, with the codebase thoughtfully organized and easily modifiable. Feel free to delve into the code, contribute, and customize it to your needs.
 
 ## :open_book: User Story
 AS A manager
