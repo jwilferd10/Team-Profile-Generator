@@ -10,15 +10,21 @@
 
 ## :wave: Description
 ### 📋 Put It Into Perspective
-Welcome to this Team Profile Generator, a command-line application built using Node.js. Enables users to create team profiles by answering a series of prompts. The information provided is then used to generate a structured HTML output. Put it into perspective and create a visual representation of your team profile!
+Welcome to the Team Profile Generator, this program is command-line application built using Node.js. Built to enable users to create team profiles by answering a series of inquirer prompts. The information provided is then used to generate a structured HTML output where each employee type have their own sections. Put it into perspective and create a visual representation of your team profile NOW!
 
 ### :rocket: Features:
-- Optimized GUI to highlight employee array
+- Optimized GUI to ensure ease of use.
+   - Showcases existing Employee Array as each Employee Object is created.
 - Capability of deleting existing employee objects before printing to HTML
-- Structured HTML to showcase employee data
+- page-template separates Employee Array into role-specific arrays.
+   - Uses collected data to create structured HTML.
 
 ### 🎯 Follows Best Practices:
-The focus of this project was to emphasize modern approaches. Team Profile Generator was built using the principles of Object Oriented Programming and Test Driven Development.
+The focus of this project was to reinforce and emphasize modern approaches. This profile generator was built using the principles of OOP and TDD. An additional feature worth highlighting is that this project utilizes:
+- `array.filter() ` to collect employee role, 
+- run a `forEach` loop on each employee type
+- use `map` to go through each employee object and generate relevant HTML
+
 
 ### 🌐 Accessible and Open:
 The repository encourages exploration and collaboration, with the codebase thoughtfully organized and easily modifiable. Feel free to delve into the code, contribute, and customize it to your needs.
