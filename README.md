@@ -29,6 +29,9 @@ The focus of this project was to reinforce and emphasize modern approaches. This
 ### 🌐 Accessible and Open:
 The repository encourages exploration and collaboration, with the codebase thoughtfully organized and easily modifiable. Feel free to delve into the code, contribute, and customize it to your needs.
 
+### 🙏 Thank You!
+So much for checking out this Team Profile Generator. This project is a personal milestone of mine and I'm excited that this repository sits complete. Thank you always, happy coding! 
+
 ## :open_book: User Story
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
