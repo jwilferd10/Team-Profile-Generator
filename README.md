@@ -29,8 +29,15 @@ The focus of this project was to reinforce and emphasize modern approaches. This
 ### 🌐 Accessible and Open:
 The repository encourages exploration and collaboration, with the codebase thoughtfully organized and easily modifiable. Feel free to delve into the code, contribute, and customize it to your needs.
 
+### 💭 Developer Notes:
+Currently users are capable of updating their `Employee Array` by deleting existing objects. Future objectives include:
+- Creating capability to edit existing Employee Objects data
+- Update the employee ID to include:
+  - Randomly generated number ID (Default choice)
+  - Manually inputted ID (Users choice)
+
 ### 🙏 Thank You!
-So much for checking out this Team Profile Generator. This project is a personal milestone of mine and I'm excited that this repository sits complete. Thank you always, happy coding! 
+So much for checking out this Team Profile Generator. This project was slated to be complete around 2021, this generator is a personal milestone of mine and I'm excited that this repository sits complete. Thank you always, happy coding! 
 
 ## :open_book: User Story
 AS A manager
